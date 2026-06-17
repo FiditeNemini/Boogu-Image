@@ -12,15 +12,16 @@
 
 <!-- ============== Badges ============== -->
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-{{ paper_id }}-b31b1b.svg?logo=arxiv&logoColor=white)](https://arxiv.org/abs/{{ paper_id }}) -->
-[![项目主页](https://img.shields.io/badge/🌐-项目主页-blue)](https://boogu.org)
+[![项目主页](https://img.shields.io/badge/🌐-Project%20Page-blue)](https://boogu.org)
 [![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/Boogu)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)](https://github.com/boogu-project/Boogu-Image)
-[![Paper](https://img.shields.io/badge/📄-技术报告%20(即将发布)-lightgrey)]()
-<!-- [![ModelScope](https://img.shields.io/badge/🤖-ModelScope-624aff)]({{ modelscope_url }}) -->
+[![ModelScope](https://img.shields.io/badge/🤖-ModelScope-624aff)](https://modelscope.cn/organization/Boogu)
+
 [![Demo-Base](https://img.shields.io/badge/🎨-Demo%20Base-ff69b4)](http://demo-base.boogu.org/)
 [![Demo-Edit](https://img.shields.io/badge/🖌️-Demo%20Edit-ff8c00)](http://demo-edit.boogu.org/)
 [![Demo-Turbo](https://img.shields.io/badge/⚡-Demo%20Turbo-9b59b6)](http://demo-turbo.boogu.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
+[![技术报告](https://img.shields.io/badge/📄-Technical%20Report%20(Coming%20Soon)-lightgrey)]()
 
 
 欢迎来到 **Boogu-Image-0.1** 官方仓库！
@@ -58,6 +59,7 @@
 > 📖 完整的实践经验与对当前局限性的坦诚说明，请参阅下文的 [安全性与局限性](#安全性与局限性)。
 
 ## 📣 最新动态
+- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://huggingface.co/Comfy-Org/Boogu-Image) 由 ComfyUI 提供支持的版本已发布！感谢 ComfyUI！
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) 发布! 
 - **2026-06-16** 🔥 **Boogu-Image-0.1-Base（文生图）发布！** 核心文生图基础模型。体验[在线演示](http://demo-base.boogu.org/)。
 - **2026-06-16** 🎨 **Boogu-Image-0.1-Edit（图生图）发布！** 图像编辑和转换能力现已可用。体验[在线演示](http://demo-edit.boogu.org/)。
@@ -66,11 +68,15 @@
 
 ## 📥 模型库
 
-| 模型 | 参数量 | 训练方式 | 步数 | CFG | 任务 | Hugging Face | 演示 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Boogu-Image-0.1-Base** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 4.0） | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base) | [![Demo](https://img.shields.io/badge/🎨-Demo-ff69b4)](http://demo-base.boogu.org/) |
-| **Boogu-Image-0.1-Edit** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 5.0） | 图生图编辑 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit) | [![Demo](https://img.shields.io/badge/🖌️-Demo-ff8c00)](http://demo-edit.boogu.org/) |
-| **Boogu-Image-0.1-Turbo** | 10B | + 解耦 DMD | 4 | 0.0 | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo) | [![Demo](https://img.shields.io/badge/⚡-Demo-9b59b6)](http://demo-turbo.boogu.org/) |
+| 模型 | 参数量 | 训练方式 | 步数 | CFG | 任务 | Hugging Face | 魔塔社区 | 演示 |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Boogu-Image-0.1-Base** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 4.0） | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Base) | [![Demo](https://img.shields.io/badge/🎨-Demo-ff69b4)](http://demo-base.boogu.org/) |
+| **Boogu-Image-0.1-Base-fp8** | 10B | 联合训练| 25~50 | 2.0～5.0<br>（例如 4.0） | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Base-fp8) | — |
+| **Boogu-Image-0.1-Edit** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 5.0） | 图生图编辑 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit) | [![Demo](https://img.shields.io/badge/🖌️-Demo-ff8c00)](http://demo-edit.boogu.org/) |
+| **Boogu-Image-0.1-Edit-fp8** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 5.0） | 图生图编辑 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit-fp8) | — |
+| **Boogu-Image-0.1-Turbo** | 10B | + 解耦 DMD | 4 | 0.0 | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo) | [![Demo](https://img.shields.io/badge/⚡-Demo-9b59b6)](http://demo-turbo.boogu.org/) |
+| **Boogu-Image-0.1-Turbo-fp8** | 10B | + 解耦 DMD | 4 | 0.0 | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo-fp8) | — |
+
 
 - **Boogu-Image-0.1-Base**：基础模型，具备强**多样性**与**可控性**——适合**微调**及下游开发。主要面向**超密集文字渲染**等复杂多文本场景；若追求照片级真实感，Turbo 模型通常是更好的选择。
 - **Boogu-Image-0.1-Edit**：图像编辑与转换变体。
