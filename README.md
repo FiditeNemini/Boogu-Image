@@ -15,13 +15,13 @@
 [![Project Page](https://img.shields.io/badge/🌐-Project%20Page-blue)](https://boogu.org)
 [![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/Boogu)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)](https://github.com/boogu-project/Boogu-Image)
-[![Paper](https://img.shields.io/badge/📄-Technical%20Report%20(Coming%20Soon)-lightgrey)]()
-<!-- [![ModelScope](https://img.shields.io/badge/🤖-ModelScope-624aff)]({{ modelscope_url }}) -->
+[![ModelScope](https://img.shields.io/badge/🤖-ModelScope-624aff)](https://modelscope.cn/organization/Boogu)
+
 [![Demo-Base](https://img.shields.io/badge/🎨-Demo%20Base-ff69b4)](http://demo-base.boogu.org/)
 [![Demo-Edit](https://img.shields.io/badge/🖌️-Demo%20Edit-ff8c00)](http://demo-edit.boogu.org/)
 [![Demo-Turbo](https://img.shields.io/badge/⚡-Demo%20Turbo-9b59b6)](http://demo-turbo.boogu.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
-
+[![Paper](https://img.shields.io/badge/📄-Technical%20Report%20(Coming%20Soon)-lightgrey)]()
 
 Welcome to the official repository for **Boogu-Image-0.1** !
 
@@ -58,7 +58,6 @@ Since we could not evaluate on LM Arena directly, we built **Boogu Arena**, an L
 > 📖 For the full set of practical lessons and an honest account of current limitations, see [Responsible AI & Limitations](#-responsible-ai--limitations) below.
 
 ## 📣 News
-https://huggingface.co/Comfy-Org/Boogu-Image/tree/main
 
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://huggingface.co/Comfy-Org/Boogu-Image) powered by ComfyUI is released! Thank you, ComfyUI!
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) is released! 
@@ -69,15 +68,20 @@ https://huggingface.co/Comfy-Org/Boogu-Image/tree/main
 
 ## 📥 Model Zoo
 
-| Model | Params | Training | Steps | CFG | Task | Hugging Face | Demo |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Boogu-Image-0.1-Base** | 10B | Joint Training | 25~50 | 2.0～5.0<br>（e.g., 4.0） | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base) | [![Demo](https://img.shields.io/badge/🎨-Demo-ff69b4)](http://demo-base.boogu.org/) |
-| **Boogu-Image-0.1-Edit** | 10B | Joint Training | 25~50 | 2.0～5.0<br>（e.g., 5.0） | TI2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit) | [![Demo](https://img.shields.io/badge/🖌️-Demo-ff8c00)](http://demo-edit.boogu.org/) |
-| **Boogu-Image-0.1-Turbo** | 10B | + Decoupled DMD | 4 | 0.0 | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo) | [![Demo](https://img.shields.io/badge/⚡-Demo-9b59b6)](http://demo-turbo.boogu.org/) |
+
+| Model | Params | Training | Steps | CFG | Task | Hugging Face | ModelScope | Demo |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Boogu-Image-0.1-Base** | 10B | Joint Training | 25~50 | 2.0～5.0<br>（e.g., 4.0） | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Base) | [![Demo](https://img.shields.io/badge/🎨-Demo-ff69b4)](http://demo-base.boogu.org/) |
+| **Boogu-Image-0.1-Base-fp8** | 10B | Joint Training | 25~50 | 2.0～5.0<br>（e.g., 4.0） | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Base-fp8) | — |
+| **Boogu-Image-0.1-Edit** | 10B | Joint Training | 25~50 | 2.0～5.0<br>（e.g., 5.0） | TI2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit) | [![Demo](https://img.shields.io/badge/🖌️-Demo-ff8c00)](http://demo-edit.boogu.org/) |
+| **Boogu-Image-0.1-Edit-fp8** | 10B | Joint Training | 25~50 | 2.0～5.0<br>（e.g., 5.0） | TI2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit-fp8) | — |
+| **Boogu-Image-0.1-Turbo** | 10B | + Decoupled DMD | 4 | 0.0 | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo) | [![Demo](https://img.shields.io/badge/⚡-Demo-9b59b6)](http://demo-turbo.boogu.org/) |
+| **Boogu-Image-0.1-Turbo-fp8** | 10B | + Decoupled DMD | 4 | 0.0 | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo-fp8) | — |
 
 - **Boogu-Image-0.1-Base**: Foundation model with strong **diversity** and **controllability** — ideal for **fine-tuning** and downstream development. Mainly intended for **ultra-dense text rendering**; for photorealism, Turbo is usually the better default.
 - **Boogu-Image-0.1-Edit**: Image editing and transformation variant.
 - **Boogu-Image-0.1-Turbo**: Distilled variant with the **same parameter count**, typically requiring only **3~4 steps**. Focuses on **high-quality generation** and photorealism while preserving bilingual text rendering and prompt adherence.
+
 
 ## 🛠️ Installation
 
