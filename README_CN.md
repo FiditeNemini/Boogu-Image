@@ -58,7 +58,7 @@
 > 📖 完整的实践经验与对当前局限性的坦诚说明，请参阅下文的 [安全性与局限性](#安全性与局限性)。
 
 ## 📣 最新动态
-
+- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) 发布! 
 - **2026-06-16** 🔥 **Boogu-Image-0.1-Base（文生图）发布！** 核心文生图基础模型。体验[在线演示](http://demo-base.boogu.org/)。
 - **2026-06-16** 🎨 **Boogu-Image-0.1-Edit（图生图）发布！** 图像编辑和转换能力现已可用。体验[在线演示](http://demo-edit.boogu.org/)。
 - **2026-06-16** 🚀 **Boogu-Image-0.1-Turbo 发布！** 用于快速推理与照片级真实感生成的 4 步蒸馏变体。体验[在线演示](http://demo-turbo.boogu.org/)。
