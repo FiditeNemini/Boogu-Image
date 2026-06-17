@@ -39,7 +39,7 @@ This repository provides checkpoints and inference code for **Boogu-Image-0.1**.
 
 ## 🏆 Boogu Arena
 
-Since we could not evaluate on LM Arena directly, we built **Boogu Arena**, an LM Arena-style preference evaluation. We use an LLM to generate diverse user personas, then ask each persona to produce image generation prompts, resulting in **1K+ test prompts** that we will release publicly for community reproduction. The ELO leaderboard below spans leading closed- and open-source systems.
+Since we could not evaluate on LM Arena directly, we built **Boogu Arena**, an LM Arena-style preference evaluation. We use an LLM to generate diverse user personas, then ask each persona to produce image generation prompts, resulting in **1K+ test prompts** that we will release publicly for community reproduction. The ELO leaderboard below spans leading closed- and open-source systems. **We welcome teams with questions about the results to contact us so that we can work toward a more objective, fair, and reproducible evaluation.**
 
 <!-- <p align="center">
   <img src="assets/ci_chart.svg" alt="Boogu Arena ELO Leaderboard" width="100%" />
