@@ -46,14 +46,17 @@
   <img src="assets/ci_chart.svg" alt="Boogu Arena ELO 排行榜" width="100%" />
 </p> -->
 <p align="center">
-  <img src="assets/boogu_combined.svg" alt="Boogu Arena ELO Leaderboard" width="100%" />
+  <img src="assets/boogu_elo_arena.svg" alt="Boogu Arena ELO Leaderboard" width="100%" />
 </p>
 
 ## ✨ 亮点
 
 - 📸 **精准优美的摄影** — 准确理解摄影类提示词，生成具有自然光照、连贯构图和真实细节的高质量图像；即使在更复杂的真实场景中，也能保持主体、背景与空间关系的一致性
+![Showcase for Photography](assets/photography_triptych.png)
 - 📝 **多样稳定的文字渲染** — 支持海报、邮票、文档、界面、品牌规范、手写板等多种文字密集型设计，在多样布局下实现可读的结构、稳定的排版以及稳健的中英文双语渲染
+![Showcase for Photography](assets/text_rendering_triptych.png)
 - 🎨 **多样精美的风格化** — 涵盖微缩 3D 场景、国风鎏金美学、闪耀奇幻视觉、动漫肖像、神话角色等风格化生成；不只是风格迁移，更追求稳定、美观、贴合提示词的创意生成
+![Showcase for Photography](assets/stylization_triptych.png)
 - 📊 **极具竞争力的综合性能** — 在众多场景和基准上展现出极具竞争力的性能，Boogu-Image-0.1 家族在 Boogu Arena 中位居参评开源与闭源系统的前列
 
 > 📖 完整的实践经验与对当前局限性的坦诚说明，请参阅下文的 [安全性与局限性](#安全性与局限性)。
