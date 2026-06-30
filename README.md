@@ -48,7 +48,7 @@ This repository provides checkpoints and inference code for **Boogu-Image-0.1**.
 ## 📣 News
 
 - **2026-06-XX** 🧊 Happy Dragon Boat Festival! We have seen many community reviews and feedback, and we will continue to update the model accordingly. Due to differences in product design philosophy, the Boogu series stands apart from most existing open-source models. While other models tend to rely on reinforcement learning techniques to enhance aesthetics, Boogu focuses on using diverse data to give users more control. This is precisely why we adopt an integrated understanding-and-generation system: we need more precise instruction control. We will release a user manual in three days to help everyone make better use of the Boogu series models.
-- **2026-06-30** 🔥 **Boogu-Image-0.1-Edit-Turbo (Image-to-Image) is released!** Four-step distilled variant of the base editing model for fast inference. Try the [online demo for 1k res](https://demo-edit-turbo-1k.boogu.org/) and [online demo for 1.5k res](https://demo-edit-turbo-1k5.boogu.org/).
+- **2026-06-30** 🔥 **Boogu-Image-0.1-Edit-Turbo (Image-to-Image) is released!** Four-step distilled variant of the editing model for fast inference. Try the [online demo for 1k res](https://demo-edit-turbo-1k.boogu.org/) and [online demo for 1.5k res](https://demo-edit-turbo-1k5.boogu.org/).
 - **2026-06-25** 🔥 [**Boogu-Image-0.1-Turbo-hotfix**](https://demo-turbo.boogu.org/) (Text-to-Image) is now online! The new checkpoint is released on Huggingface in the revision [hotfix-20260625](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo/tree/hotfix-20260625). This is a minor patch release. We fixed visual artifacts appear in different aspect ratio, background overfitting artifacts, and other artifacts. Model weights are updated, no feature changes.
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://huggingface.co/Comfy-Org/Boogu-Image) powered by ComfyUI is released! Thank you, ComfyUI!
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) is released!
@@ -109,10 +109,12 @@ Beyond overall arena rankings, we break performance down by scenario across lead
 | **Boogu-Image-0.1-Edit-fp8** | 10B | Joint Training | 25~50 | 2.0～5.0<br>（e.g., 5.0） | TI2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit-fp8) | — |
 | **Boogu-Image-0.1-Turbo** | 10B | + Decoupled DMD | 4 | 1.0 | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo) | [![Demo](https://img.shields.io/badge/⚡-Demo-9b59b6)](http://demo-turbo.boogu.org/) |
 | **Boogu-Image-0.1-Turbo-fp8** | 10B | + Decoupled DMD | 4 | 1.0 | T2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo-fp8) | — |
+| **Boogu-Image-0.1-Edit-Turbo** | 10B | + Decoupled DMD | 4 | 1.0 | TI2I | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit-Turbo) | [![Demo 1k](https://img.shields.io/badge/⚡-Demo%201k-9b59b6)](https://demo-edit-turbo-1k.boogu.org/) [![Demo 1k5](https://img.shields.io/badge/⚡-Demo%201k5-9b59b6)](https://demo-edit-turbo-1k5.boogu.org/) |
 
 - **Boogu-Image-0.1-Base**: Foundation model with strong **diversity** and **controllability** — ideal for **fine-tuning** and downstream development. Mainly intended for **ultra-dense text rendering**; for photorealism, Turbo is usually the better default. Supported resolutions: 1K, 1.5K, 2K.
 - **Boogu-Image-0.1-Edit**: Image editing and transformation variant. Supported resolutions: 1K, 1.5K, 2K.
 - **Boogu-Image-0.1-Turbo**: Distilled variant with the **same parameter count**, typically requiring only **3~4 steps**. Focuses on **high-quality generation** and photorealism while preserving bilingual text rendering and prompt adherence. Supported resolution: 1K.
+- **Boogu-Image-0.1-Edit-Turbo**: Distilled variant with the **same parameter count**.
 
 Unless otherwise specified, all model variants support the following aspect ratios: 1:1, 2:3, 3:2, 3:4, 4:3, 1:2, 2:1, 9:16, and 16:9.
 
@@ -150,6 +152,7 @@ pip install -U "huggingface_hub[cli]"
 huggingface-cli download Boogu/Boogu-Image-0.1-Base --local-dir models/Boogu-Image-0.1-Base
 huggingface-cli download Boogu/Boogu-Image-0.1-Turbo --local-dir models/Boogu-Image-0.1-Turbo
 huggingface-cli download Boogu/Boogu-Image-0.1-Edit --local-dir models/Boogu-Image-0.1-Edit
+huggingface-cli download Boogu/Boogu-Image-0.1-Edit-Turbo --local-dir models/Boogu-Image-0.1-Edit-Turbo
 ```
 
 Example layout after download:

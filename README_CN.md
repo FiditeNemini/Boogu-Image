@@ -48,7 +48,7 @@
 ## 📣 最新动态
 
 - **2026-06-XX** 🧊 端午安康！我们已经看到许多来自社区的评测和反馈，并将继续据此更新模型。由于设计理念上的差异，Boogu 系列与现有大多数开源模型有所不同。其他模型往往依赖强化学习技术来提升美感，而 Boogu 更注重通过多样化数据赋予用户更强的控制能力。这也正是我们采用理解与生成一体化系统的原因：我们需要更精确的指令控制。我们将在三天后发布用户手册，帮助大家更好地使用 Boogu 系列模型。
-- **2026-06-30** 🔥 **Boogu-Image-0.1-Edit-Turbo（图生图）发布！** 这是基础编辑模型的四步蒸馏版本。体验 [1K 分辨率在线演示](https://demo-edit-turbo-1k.boogu.org/) and [1.5K 分辨率在线演示](https://demo-edit-turbo-1k5.boogu.org/)。
+- **2026-06-30** 🔥 **Boogu-Image-0.1-Edit-Turbo（图生图）发布！** 这是编辑模型的四步蒸馏版本。体验 [1K 分辨率在线演示](https://demo-edit-turbo-1k.boogu.org/) and [1.5K 分辨率在线演示](https://demo-edit-turbo-1k5.boogu.org/)。
 - **2026-06-25** 🔥 [**Boogu-Image-0.1-Turbo-hotfix**](https://demo-turbo.boogu.org/)（文生图）现已上线！新的检查点已在 Hugging Face 的 revision [hotfix-20260625](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo/tree/hotfix-20260625) 中发布。这是一个小型补丁版本，我们修复了在不同宽高比下出现的视觉伪影、背景过拟合伪影及其他伪影。模型权重已更新，模型功能无变化。
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://huggingface.co/Comfy-Org/Boogu-Image) 由 ComfyUI 提供支持的版本已发布！感谢 ComfyUI！
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) 发布!
@@ -109,10 +109,12 @@
 | **Boogu-Image-0.1-Edit-fp8** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 5.0） | 图生图编辑 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit-fp8) | — |
 | **Boogu-Image-0.1-Turbo** | 10B | + 解耦 DMD | 4 | 1.0 | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo) | [![Demo](https://img.shields.io/badge/⚡-Demo-9b59b6)](http://demo-turbo.boogu.org/) |
 | **Boogu-Image-0.1-Turbo-fp8** | 10B | + 解耦 DMD | 4 | 1.0 | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo-fp8) | — |
+| **Boogu-Image-0.1-Edit-Turbo** | 10B | + 解耦 DMD | 4 | 1.0 | 图生图编辑 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit-Turbo) | [![Demo 1k](https://img.shields.io/badge/⚡-Demo%201k-9b59b6)](https://demo-edit-turbo-1k.boogu.org/) [![Demo 1k5](https://img.shields.io/badge/⚡-Demo%201k5-9b59b6)](https://demo-edit-turbo-1k5.boogu.org/) |
 
 - **Boogu-Image-0.1-Base**：基础模型，具备强**多样性**与**可控性**——适合**微调**及下游开发。主要面向**超密集文字渲染**等复杂多文本场景；若追求照片级真实感，Turbo 模型通常是更好的选择。支持分辨率：1K、1.5K、2K。
 - **Boogu-Image-0.1-Edit**：图像编辑与转换变体。支持分辨率：1K、1.5K、2K。
 - **Boogu-Image-0.1-Turbo**：蒸馏变体，与基础模型**参数量相同**，通常仅需 **3~4 步**。专注于**高质量生成**与照片级真实感，同时保留双语文字渲染与提示词遵循能力。支持分辨率：1K。
+- **Boogu-Image-0.1-Edit-Turbo**: 蒸馏变体，与编辑模型**参数量相同**。
 
 如无特别说明，所有模型变体均支持以下宽高比：1:1、2:3、3:2、3:4、4:3、1:2、2:1、9:16、16:9。
 
