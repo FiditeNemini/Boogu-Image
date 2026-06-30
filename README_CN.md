@@ -16,6 +16,7 @@
 [![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/Boogu)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)](https://github.com/boogu-project/Boogu-Image)
 [![ModelScope](https://img.shields.io/badge/🤖-ModelScope-624aff)](https://modelscope.cn/organization/Boogu)
+[![Gallery](https://img.shields.io/badge/⛰️-Gallery-green)](https://boogu-gallery.netlify.app/)
 
 [![Demo-Base](https://img.shields.io/badge/🎨-Demo%20Base-ff69b4)](http://demo-base.boogu.org/)
 [![Demo-Edit](https://img.shields.io/badge/🖌️-Demo%20Edit-ff8c00)](http://demo-edit.boogu.org/)
@@ -44,13 +45,21 @@
 
 本仓库提供 **Boogu-Image-0.1** 的模型权重和推理代码。
 
+## 📣 最新动态
+- **2026-06-XX** 🧊 **Boogu-Image-0.1-Edit-Turbo (图生图) 即将发布!**
+- **2026-06-xx** 🧊 端午安康！我们已经看到许多来自社区的评测和反馈，并将继续据此更新模型。由于设计理念上的差异，Boogu 系列与现有大多数开源模型有所不同。其他模型往往依赖强化学习技术来提升美感，而 Boogu 更注重通过多样化数据赋予用户更强的控制能力。这也正是我们采用理解与生成一体化系统的原因：我们需要更精确的指令控制。我们将在三天后发布用户手册，帮助大家更好地使用 Boogu 系列模型。
+- **2026-06-25** 🔥 [**Boogu-Image-0.1-Turbo-hotfix**](https://demo-turbo.boogu.org/)（文生图）现已上线！新的检查点已在 Hugging Face 的 revision [hotfix-20260625](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo/tree/hotfix-20260625) 中发布。这是一个小型补丁版本，我们修复了在不同宽高比下出现的视觉伪影、背景过拟合伪影及其他伪影。模型权重已更新，模型功能无变化。
+- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://huggingface.co/Comfy-Org/Boogu-Image) 由 ComfyUI 提供支持的版本已发布！感谢 ComfyUI！
+- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) 发布!
+- **2026-06-16** 🔥 **Boogu-Image-0.1-Base（文生图）发布！** 核心文生图基础模型。体验[在线演示](http://demo-base.boogu.org/)。
+- **2026-06-16** 🎨 **Boogu-Image-0.1-Edit（图生图）发布！** 图像编辑和转换能力现已可用。**模型支持最高 2K 分辨率的图像输入与输出，但在 1K 分辨率下的生成效果更为稳定。** 体验[在线演示](http://demo-edit.boogu.org/)。**目前仅支持 1 张参考图像。我们会尽力支持更多参考图像，敬请期待！** Boogu-Image-0.1-Edit 在单图编辑方面表现强劲。欢迎提供更多失败案例。
+- **2026-06-16** 🚀 **Boogu-Image-0.1-Turbo 发布！** 用于快速推理与照片级真实感生成的 4 步蒸馏变体。体验[在线演示](http://demo-turbo.boogu.org/)。
+<!-- - **[{{ 2026-06-DD }}]** 📄 **技术报告发布！** 阅读我们在 [arXiv](https://arxiv.org/abs/{{ paper_id }}) 上的发现。 -->
+
 ## 🏆 Boogu Arena
 
 由于我们无法直接在 LM Arena 上评测，我们构建了 **Boogu Arena**——一套 LM Arena 风格的偏好评测。我们使用 LLM 生成多样化的用户画像（persona），再让每个画像产出图像生成提示词，共得到 **1K+ 条测试提示词**，并将公开发布以供社区复现。下方的 ELO 排行榜涵盖了领先的闭源与开源系统。我们欢迎对结果有疑问的团队与我们联系，以便我们能够努力实现更加客观、公平和可重复的评估。
 
-<!-- <p align="center">
-  <img src="assets/ci_chart.svg" alt="Boogu Arena ELO 排行榜" width="100%" />
-</p> -->
 <p align="center">
   <img src="assets/boogu_elo_arena.svg" alt="Boogu Arena ELO Leaderboard" width="100%" />
 </p>
@@ -89,20 +98,12 @@
 - 📝 **密集文字渲染表现稳健** — Boogu-Image-0.1-Base 在密集、复杂排版的文字场景（海报、文档、品牌规范、复杂中英文设计等）中展现出有竞争力的表现。
 - 💡 **使用建议** — 当工作负载以密集 / 超密集文字渲染为主时，推荐使用 **Boogu-Image-0.1-Base 并以 2K 分辨率输出**，以获得最佳的排版忠实度和文字准确度。
 
-## 📣 最新动态
-- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://huggingface.co/Comfy-Org/Boogu-Image) 由 ComfyUI 提供支持的版本已发布！感谢 ComfyUI！
-- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) 发布! 
-- **2026-06-16** 🔥 **Boogu-Image-0.1-Base（文生图）发布！** 核心文生图基础模型。体验[在线演示](http://demo-base.boogu.org/)。
-- **2026-06-16** 🎨 **Boogu-Image-0.1-Edit（图生图）发布！** 图像编辑和转换能力现已可用。体验[在线演示](http://demo-edit.boogu.org/)。
-- **2026-06-16** 🚀 **Boogu-Image-0.1-Turbo 发布！** 用于快速推理与照片级真实感生成的 4 步蒸馏变体。体验[在线演示](http://demo-turbo.boogu.org/)。
-<!-- - **[{{ 2026-06-DD }}]** 📄 **技术报告发布！** 阅读我们在 [arXiv](https://arxiv.org/abs/{{ paper_id }}) 上的发现。 -->
-
 ## 📥 模型库
 
 | 模型 | 参数量 | 训练方式 | 步数 | CFG | 任务 | Hugging Face | 魔塔社区 | 演示 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Boogu-Image-0.1-Base** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 4.0） | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Base) | [![Demo](https://img.shields.io/badge/🎨-Demo-ff69b4)](http://demo-base.boogu.org/) |
-| **Boogu-Image-0.1-Base-fp8** | 10B | 联合训练| 25~50 | 2.0～5.0<br>（例如 4.0） | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Base-fp8) | — |
+| **Boogu-Image-0.1-Base-fp8** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 4.0） | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Base-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Base-fp8) | — |
 | **Boogu-Image-0.1-Edit** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 5.0） | 图生图编辑 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit) | [![Demo](https://img.shields.io/badge/🖌️-Demo-ff8c00)](http://demo-edit.boogu.org/) |
 | **Boogu-Image-0.1-Edit-fp8** | 10B | 联合训练 | 25~50 | 2.0～5.0<br>（例如 5.0） | 图生图编辑 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-fp8) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Edit-fp8) | — |
 | **Boogu-Image-0.1-Turbo** | 10B | + 解耦 DMD | 4 | 1.0 | 文生图 | [![HF](https://img.shields.io/badge/%F0%9F%A4%97-Checkpoint-yellow)](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo) | [![MS](https://img.shields.io/badge/🤖-Checkpoint-624aff)](https://modelscope.cn/models/Boogu/Boogu-Image-0.1-Turbo) | [![Demo](https://img.shields.io/badge/⚡-Demo-9b59b6)](http://demo-turbo.boogu.org/) |
@@ -266,11 +267,20 @@ python inference.py \
 
 下游用户有责任根据其使用场景应用适当的内容审核、验证和合规检查。
 
-
 ## 🙏 致谢
 
-[GPT-Image](https://openai.com/index/introducing-chatgpt-images-2-0/)、[Nano Banana](https://gemini.google/overview/image-generation/) 以及 [Seedream](https://seed.bytedance.com/en/seedream5_0_lite) 系列等闭源系统帮助我们更好地理解统一理解-生成系统的前沿能力与实际边界。我们感谢 [Qwen-Image](https://github.com/QwenLM/Qwen-Image)、[Z-Image](https://github.com/Tongyi-MAI/Z-Image)、[OmniGen2](https://github.com/VectorSpaceLab/OmniGen2)、[FLUX](https://github.com/black-forest-labs/flux) 以及更广泛的开源社区所提供的宝贵基础与参考，也感谢 [DeepSeek](https://www.deepseek.com) 提供了足够强大的开源理解模型，为开源统一多模态理解-生成系统的发展提供了重要支持。
+[GPT-Image](https://openai.com/index/introducing-chatgpt-images-2-0/)、[Nano Banana](https://gemini.google/overview/image-generation/) 以及 [Seedream](https://seed.bytedance.com/en/seedream5_0_lite) 系列等闭源系统帮助我们更好地理解统一理解-生成系统的前沿能力与实际边界。我们感谢 [Qwen-Image](https://github.com/QwenLM/Qwen-Image)、[Z-Image](https://github.com/Tongyi-MAI/Z-Image)、[OmniGen2](https://github.com/VectorSpaceLab/OmniGen2)、[FLUX](https://github.com/black-forest-labs/flux)、[Lumina-Image-2.0](https://github.com/Alpha-VLLM/Lumina-Image-2.0) 以及更广泛的开源社区所提供的宝贵基础与参考，也感谢 [DeepSeek](https://www.deepseek.com) 提供了足够强大的开源理解模型，为开源统一多模态理解-生成系统的发展提供了重要支持。
 
+## 📚 引用
+
+```bibtex
+@misc{boogu-image-2026,
+  author       = {Boogu Team},
+  title        = {{Boogu-Image-0.1}},
+  year         = {2026},
+  howpublished = {\url{https://github.com/BOOGU-Project/Boogu-Image}},
+}
+```
 
 ## 📄 许可证
 

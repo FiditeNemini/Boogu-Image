@@ -16,7 +16,7 @@
 [![Hugging Face](https://img.shields.io/badge/🤗-Hugging%20Face-yellow)](https://huggingface.co/Boogu)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)](https://github.com/boogu-project/Boogu-Image)
 [![ModelScope](https://img.shields.io/badge/🤖-ModelScope-624aff)](https://modelscope.cn/organization/Boogu)
-[![ModelScope](https://img.shields.io/badge/⛰️-Gallery-green)](https://boogu-gallery.netlify.app/)
+[![Gallery](https://img.shields.io/badge/⛰️-Gallery-green)](https://boogu-gallery.netlify.app/)
 
 [![Demo-Base](https://img.shields.io/badge/🎨-Demo%20Base-ff69b4)](http://demo-base.boogu.org/)
 [![Demo-Edit](https://img.shields.io/badge/🖌️-Demo%20Edit-ff8c00)](http://demo-edit.boogu.org/)
@@ -47,18 +47,17 @@ This repository provides checkpoints and inference code for **Boogu-Image-0.1**.
 ## 📣 News
 - **2026-06-XX** 🧊 **Boogu-Image-0.1-Edit-Turbo (Image-to-Image) is coming!**
 - **2026-06-xx** 🧊 Happy Dragon Boat Festival! We have seen many community reviews and feedback, and we will continue to update the model accordingly. Due to differences in product design philosophy, the Boogu series stands apart from most existing open-source models. While other models tend to rely on reinforcement learning techniques to enhance aesthetics, Boogu focuses on using diverse data to give users more control. This is precisely why we adopt an integrated understanding-and-generation system: we need more precise instruction control. We will release a user manual in three days to help everyone make better use of the Boogu series models.
-- **2026-06-25** 🔥 [**Boogu-Image-0.1-Turbo-hotfix**](https://demo-turbo.boogu.org/) (Text-to-Image) is now online! The new checkpoint is released on Huggingface in the branch [hotfix-20260625](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo/tree/hotfix-20260625). This is a minor patch release. We fixed visual artifacts appear in different aspect ratio, background overfitting artifacts, and other artifacts. Model weights are updated, no feature changes. 
+- **2026-06-25** 🔥 [**Boogu-Image-0.1-Turbo-hotfix**](https://demo-turbo.boogu.org/) (Text-to-Image) is now online! The new checkpoint is released on Huggingface in the revision [hotfix-20260625](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo/tree/hotfix-20260625). This is a minor patch release. We fixed visual artifacts appear in different aspect ratio, background overfitting artifacts, and other artifacts. Model weights are updated, no feature changes.
 - **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://huggingface.co/Comfy-Org/Boogu-Image) powered by ComfyUI is released! Thank you, ComfyUI!
-- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) is released! 
+- **2026-06-17** 🔥 [**ComfyUI-Boogu**](https://github.com/boogu-project/ComfyUI-Boogu) is released!
 - **2026-06-16** 🔥 **Boogu-Image-0.1-Base (Text-to-Image) is released!** The core text-to-image foundation model. Try the [online demo](http://demo-base.boogu.org/).
-- **2026-06-16** 🎨 **Boogu-Image-0.1-Edit (Image-to-Image) is released!** Image editing and transformation capabilities now available. **Note that you need to change the resolution of the reference image to 1K accordingly.** Try the [online demo](http://demo-edit.boogu.org/). **Only support 1 reference image for now. Will try our best to support more reference images. Stay tuned!** Boogu-Image-0.1-Edit on single-image editing is strong. More failure cases are welcome.
+- **2026-06-16** 🎨 **Boogu-Image-0.1-Edit (Image-to-Image) is released!** Image editing and transformation capabilities now available. **The model supports resolutions up to 2K, but the results are more stable at 1K.** Try the [online demo](http://demo-edit.boogu.org/). **Only support 1 reference image for now. Will try our best to support more reference images. Stay tuned!** Boogu-Image-0.1-Edit on single-image editing is strong. More failure cases are welcome.
 - **2026-06-16** 🚀 **Boogu-Image-0.1-Turbo is released!** Four-step distilled variant for fast inference and photorealistic generation. Try the [online demo](http://demo-turbo.boogu.org/).
 <!-- - **[{{ 2026-06-DD }}]** 📄 **Technical report is released!** Read our findings on [arXiv](https://arxiv.org/abs/{{ paper_id }}). -->
 
 ## 🏆 Boogu Arena
 
 Since we could not evaluate on LM Arena directly, we built **Boogu Arena**, an LM Arena-style preference evaluation. We use an LLM to generate diverse user personas, then ask each persona to produce image generation prompts, resulting in **1K+ test prompts** that we will release publicly for community reproduction. The ELO leaderboard below spans leading closed- and open-source systems. **We welcome teams with questions about the results to contact us so that we can work toward a more objective, fair, and reproducible evaluation.**
-
 
 <p align="center">
   <img src="assets/boogu_elo_arena.svg" alt="Boogu Arena ELO Leaderboard" width="100%" />
@@ -238,6 +237,8 @@ python inference.py \
 
 ## ⚠️ Responsible AI & Limitations
 
+### Responsible AI
+
 **Boogu-Image-0.1** is released for **research purposes** and is not intended for production deployment without additional safeguards. We took responsible-AI considerations into account during data curation, training, and evaluation; however the model may still produce outputs that are inaccurate, biased, or otherwise inappropriate.
 
 ### Known Limitations
@@ -281,7 +282,6 @@ Closed-source systems such as [GPT-Image](https://openai.com/index/introducing-c
   howpublished = {\url{https://github.com/BOOGU-Project/Boogu-Image}},
 }
 ```
-
 
 ## 📄 License
 
