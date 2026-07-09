@@ -73,7 +73,7 @@ class FlowMatchEulerDiscreteScheduler(SchedulerMixin, ConfigMixin):
         num_train_timesteps: int = 1000,
         do_shift: bool = True,
         dynamic_time_shift: bool = True,
-        time_shift_version: str = "v2",
+        time_shift_version: str = "v1",
         # seq_len is used to mirror training-side static time shift (when dynamic_time_shift=False)
         # In training, seq_len is the token count used to compute shift.
         seq_len: Optional[int] = None,
