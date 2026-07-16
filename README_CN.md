@@ -23,7 +23,8 @@
 [![Demo-Edit-Turbo-1k5](https://img.shields.io/badge/⚡-Demo%20Edit%20Turbo%201k5-9b59b6)](https://demo-edit-turbo-1k5.boogu.org/)
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
-[![技术报告](https://img.shields.io/badge/📄-Technical%20Report%20(Coming%20Soon)-lightgrey)]()
+[![arXiv: 技术报告](https://img.shields.io/badge/arXiv-%E6%8A%80%E6%9C%AF%E6%8A%A5%E5%91%8A-b31b1b)](https://arxiv.org/abs/2607.13125)
+
 
 欢迎来到 **Boogu-Image-0.1** 官方仓库！
 
@@ -46,7 +47,8 @@
 本仓库提供 **Boogu-Image-0.1** 的模型权重和推理代码。
 
 ## 📣 最新动态
-
+![image](https://github.com/user-attachments/assets/54677ee5-85ad-4020-b39f-f3d8b34a7243)
+- **2026-07-16** 🔥 🚀 🚀 **Boogu-Image-0.1 技术报告正式发布！** 我们已经正式发布了该系列模型的技术报告。如果您觉得我们的系列模型或报告内容对您的研究和工作有帮助，希望您能引用我们的文章。非常感谢您的支持！论文链接：[arXiv:2607.13125](https://arxiv.org/abs/2607.13125)。
 - **2026-06-XX** 🧊 端午安康！我们已经看到许多来自社区的评测和反馈，并将继续据此更新模型。由于设计理念上的差异，Boogu 系列与现有大多数开源模型有所不同。其他模型往往依赖强化学习技术来提升美感，而 Boogu 更注重通过多样化数据赋予用户更强的控制能力。这也正是我们采用理解与生成一体化系统的原因：我们需要更精确的指令控制。我们将在三天后发布用户手册，帮助大家更好地使用 Boogu 系列模型。
 - **2026-07-08** 🔥 **Boogu-Image-0.1-Edit-Turbo（Image-to-Image hotfix）正式发布！** 本次更新修复了上一版本中的若干问题，如修改后画质下降严重，删除任务效果不好。新的 checkpoint 已发布在 Hugging Face，对应 revisions 为 [hotfix-1k-20260708](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k-20260708) 和 [hotfix-1k5-20260708](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k5-20260708)。我们推荐下载 1K checkpoint，以获得更稳定的效果。欢迎体验 [1K 分辨率在线 Demo](https://demo-edit-turbo-1k.boogu.org/) 和 [1.5K 分辨率在线 Demo](https://demo-edit-turbo-1k5.boogu.org/)。
 - **2026-06-30** 🔥 **Boogu-Image-0.1-Edit-Turbo（图生图）发布！** 这是编辑模型的四步蒸馏版本。体验 [1K 分辨率在线演示](https://demo-edit-turbo-1k.boogu.org/) and [1.5K 分辨率在线演示](https://demo-edit-turbo-1k5.boogu.org/)。
@@ -283,11 +285,14 @@ python inference.py \
 ## 📚 引用
 
 ```bibtex
-@misc{boogu-image-2026,
-  author       = {Boogu Team},
-  title        = {{Boogu-Image-0.1}},
-  year         = {2026},
-  howpublished = {\url{https://github.com/BOOGU-Project/Boogu-Image}},
+@misc{chen2026booguimage01,
+      title={Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation}, 
+      author={Guoxuan Chen and Chufeng Xiao and Haoran Yang and Siyue Xie and Binxiao Huang and Ming Zhang and Cheuk Him Chau and Xinyu Fu and Yingzhao Lian and Tom S. Y. Li and Jintao Lin and Bowen Dong and Zian Qian and Yuhao Liu and Yuxuan Hu and Weikang Shi and Bin Zou and Bowen Zheng and Haoxuan Che and Chang Chen and Yuyang He and Heyang Sun and Tianyu Huang and Chong Hou Choi and Cheng Gong and Han Shi and Haoli Bai and Xihui Liu and Hongsheng Li and Qifeng Chen and Chao Huang and Rui Liu and Chenyang Lei},
+      year={2026},
+      eprint={2607.13125},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.13125}, 
 }
 ```
 
