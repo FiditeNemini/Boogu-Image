@@ -46,8 +46,6 @@ English | [中文](./README_CN.md)
 This repository provides checkpoints and inference code for **Boogu-Image-0.1**.
 
 ## 📣 News
-
-- **2026-06-XX** 🧊 Happy Dragon Boat Festival! We have seen many community reviews and feedback, and we will continue to update the model accordingly. Due to differences in product design philosophy, the Boogu series stands apart from most existing open-source models. While other models tend to rely on reinforcement learning techniques to enhance aesthetics, Boogu focuses on using diverse data to give users more control. This is precisely why we adopt an integrated understanding-and-generation system: we need more precise instruction control. We will release a user manual in three days to help everyone make better use of the Boogu series models.
 - **2026-07-08** 🔥 **Boogu-Image-0.1-Edit-Turbo (Image-to-Image hotfix) is released!** This update addresses several issues in the previous version, including severe image quality degradation and poor performance on removal and other editing tasks. The new checkpoints are released on Hugging Face in the revisions [hotfix-1k-20260708](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k-20260708) and [hotfix-1k5-20260708](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k5-20260708). We recommend downloading the 1K checkpoint for more stable results. Try the [online demo for 1K res](https://demo-edit-turbo-1k.boogu.org/) and [online demo for 1.5K res](https://demo-edit-turbo-1k5.boogu.org/).
 - **2026-06-30** 🔥 **Boogu-Image-0.1-Edit-Turbo (Image-to-Image) is released!** Four-step distilled variant of the editing model for fast inference. Try the [online demo for 1k res](https://demo-edit-turbo-1k.boogu.org/) and [online demo for 1.5k res](https://demo-edit-turbo-1k5.boogu.org/).
 - **2026-06-25** 🔥 [**Boogu-Image-0.1-Turbo-hotfix**](https://demo-turbo.boogu.org/) (Text-to-Image) is now online! The new checkpoint is released on Huggingface in the revision [hotfix-20260625](https://huggingface.co/Boogu/Boogu-Image-0.1-Turbo/tree/hotfix-20260625). This is a minor patch release. We fixed visual artifacts appear in different aspect ratio, background overfitting artifacts, and other artifacts. Model weights are updated, no feature changes.
@@ -284,11 +282,14 @@ Closed-source systems such as [GPT-Image](https://openai.com/index/introducing-c
 ## 📚 Cite this work
 
 ```bibtex
-@misc{boogu-image-2026,
-  author       = {Boogu Team},
-  title        = {{Boogu-Image-0.1}},
-  year         = {2026},
-  howpublished = {\url{https://github.com/BOOGU-Project/Boogu-Image}},
+@misc{chen2026booguimage01boostingopensourceunified,
+      title={Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation}, 
+      author={Guoxuan Chen and Chufeng Xiao and Haoran Yang and Siyue Xie and Binxiao Huang and Ming Zhang and Cheuk Him Chau and Xinyu Fu and Yingzhao Lian and Tom S. Y. Li and Jintao Lin and Bowen Dong and Zian Qian and Yuhao Liu and Yuxuan Hu and Weikang Shi and Bin Zou and Bowen Zheng and Haoxuan Che and Chang Chen and Yuyang He and Heyang Sun and Tianyu Huang and Chong Hou Choi and Cheng Gong and Han Shi and Haoli Bai and Xihui Liu and Hongsheng Li and Qifeng Chen and Chao Huang and Rui Liu and Chenyang Lei},
+      year={2026},
+      eprint={2607.13125},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.13125}, 
 }
 ```
 
