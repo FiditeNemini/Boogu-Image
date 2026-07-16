@@ -14,7 +14,7 @@ num_inference_steps=50
 seed=0
 text_guidance_scale=4.0
 image_guidance_scale=1.0
-pretrained_pipeline_name_or_path="/path/to/pipeline/weights/boogu_pipeline_omni_pt"
+pretrained_pipeline_name_or_path="Boogu/Boogu-Image-0.0-Edit-exp-pt"
 ###############VLM input image size (Fixed)#################
 max_vlm_input_pil_pixels="147456 147456 147456 147456"
 max_vlm_input_pil_side_length=768
