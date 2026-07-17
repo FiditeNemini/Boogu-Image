@@ -2,7 +2,7 @@
   <img src="assets/boogu-logo-title.svg" alt="Boogu-Image-0.1" width="420" />
 </p>
 
-<h3 align="center">Boosting Open-Source Unified Multimodal Understanding and Generation</h3>
+<h3 align="center">Boogu-Image-0.1: Boosting Open Agentic Multimodal Generation via Understanding under a Minimal Budget</h3>
 
 <div align="center">
 
