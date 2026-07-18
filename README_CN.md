@@ -2,7 +2,7 @@
   <img src="assets/boogu-logo-title.svg" alt="Boogu-Image-0.1" width="420" />
 </p>
 
-<h3 align="center">助推开源统一多模态理解与生成</h3>
+<h3 align="center">以极小预算通过理解能力提升开源智能体Agentic多模态生成</h3>
 
 <div align="center">
 
@@ -285,7 +285,7 @@ python inference.py \
 
 ```bibtex
 @misc{chen2026booguimage01,
-      title={Boogu-Image-0.1: Boosting Open-Source Unified Multimodal Understanding and Generation}, 
+      title={Boogu-Image-0.1: Boosting Open Agentic Multimodal Generation via Understanding under a Minimal Budget}, 
       author={Guoxuan Chen and Chufeng Xiao and Haoran Yang and Siyue Xie and Binxiao Huang and Ming Zhang and Cheuk Him Chau and Xinyu Fu and Yingzhao Lian and Tom S. Y. Li and Jintao Lin and Bowen Dong and Zian Qian and Yuhao Liu and Yuxuan Hu and Weikang Shi and Bin Zou and Bowen Zheng and Haoxuan Che and Chang Chen and Yuyang He and Heyang Sun and Tianyu Huang and Chong Hou Choi and Cheng Gong and Han Shi and Haoli Bai and Xihui Liu and Hongsheng Li and Qifeng Chen and Chao Huang and Rui Liu and Chenyang Lei},
       year={2026},
       eprint={2607.13125},
