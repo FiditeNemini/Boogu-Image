@@ -2,7 +2,7 @@
   <img src="assets/boogu-logo-title.svg" alt="Boogu-Image-0.1" width="420" />
 </p>
 
-<h3 align="center">以极小预算通过理解能力提升开源智能体Agentic多模态生成</h3>
+<h3 align="center">极低预算下通过'理解'提升开源智能体式多模态生成能力</h3>
 
 <div align="center">
 
