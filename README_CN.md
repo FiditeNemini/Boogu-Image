@@ -59,6 +59,22 @@
 - **2026-06-16** 🚀 **Boogu-Image-0.1-Turbo 发布！** 用于快速推理与照片级真实感生成的 4 步蒸馏变体。体验 [在线演示](http://demo-turbo.boogu.org/)。
 <!-- - **[{{ 2026-06-DD }}]** 📄 **技术报告发布！** 阅读我们在 [arXiv](https://arxiv.org/abs/{{ paper_id }}) 上的发现。 -->
 
+## 🌐 加入社区！
+
+Boogu-Image 与用户共同成长。欢迎分享你的创作、反馈问题、交流想法，并与我们一起塑造 Boogu-Image 的未来。
+
+<p align="center">
+  <strong>微信群</strong>
+</p>
+
+<p align="center">
+  <img src="assets/Boogu-Image-Discussion-Group.png"
+       alt="Boogu-Image 微信群二维码"
+       width="180">
+</p>
+
+
+
 ## 🏆 Boogu Arena
 
 由于我们无法直接在 LM Arena 上评测，我们构建了 **Boogu Arena**——一套 LM Arena 风格的偏好评测。我们使用 LLM 生成多样化的用户画像（persona），再让每个画像产出图像生成提示词，共得到 **1K+ 条测试提示词**，并将公开发布以供社区复现。下方的 ELO 排行榜涵盖了领先的闭源与开源系统。我们欢迎对结果有疑问的团队与我们联系，以便我们能够努力实现更加客观、公平和可重复的评估。
