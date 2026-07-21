@@ -57,6 +57,19 @@ This repository provides checkpoints and inference code for **Boogu-Image-0.1**.
 - **2026-06-16** 🚀 **Boogu-Image-0.1-Turbo is released!** Four-step distilled variant for fast inference and photorealistic generation. Try the [online demo](http://demo-turbo.boogu.org/).
 <!-- - **[{{ 2026-06-DD }}]** 📄 **Technical report is released!** Read our findings on [arXiv](https://arxiv.org/abs/{{ paper_id }}). -->
 
+## 🌐 Join the Community!
+Boogu-Image is built to grow with its users. Share what you create, report issues, exchange ideas, and help shape what comes next. 
+
+<p align="center">
+  <strong>WeChat Group</strong>
+</p>
+
+<p align="center">
+  <img src="assets/Boogu-Image-Discussion-Group.png"
+       alt="Boogu-Image WeChat Group QR Code"
+       width="180">
+</p>
+
 ## 🏆 Boogu Arena
 
 Since we could not evaluate on LM Arena directly, we built **Boogu Arena**, an LM Arena-style preference evaluation. We use an LLM to generate diverse user personas, then ask each persona to produce image generation prompts, resulting in **1K+ test prompts** that we will release publicly for community reproduction. The ELO leaderboard below spans leading closed- and open-source systems. **We welcome teams with questions about the results to contact us so that we can work toward a more objective, fair, and reproducible evaluation.**
