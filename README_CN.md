@@ -47,6 +47,7 @@
 本仓库提供 **Boogu-Image-0.1** 的模型权重和推理代码。
 
 ## 📣 最新动态
+- **2026-07-23** 🔥 **NPU 支持现已上线！** 访问 `npu` 分支以体验初步 NPU 后端支持与说明文档。欢迎大家反馈建议和 bug！
 - **2026-07-16** 🔥 🚀 🚀 **Boogu-Image-0.1 技术报告正式发布！** 我们已经正式发布了该系列模型的技术报告。如果您觉得我们的系列模型或报告内容对您的研究和工作有帮助，希望您能引用我们的文章。非常感谢您的支持！论文链接：[arXiv:2607.13125](https://arxiv.org/abs/2607.13125)。
 - **2026-06-XX** 🧊 端午安康！我们已经看到许多来自社区的评测和反馈，并将继续据此更新模型。由于设计理念上的差异，Boogu 系列与现有大多数开源模型有所不同。其他模型往往依赖强化学习技术来提升美感，而 Boogu 更注重通过多样化数据赋予用户更强的控制能力。这也正是我们采用理解与生成一体化系统的原因：我们需要更精确的指令控制。我们将在三天后发布用户手册，帮助大家更好地使用 Boogu 系列模型。
 - **2026-07-08** 🔥 **Boogu-Image-0.1-Edit-Turbo（Image-to-Image hotfix）正式发布！** 本次更新修复了上一版本中的若干问题，如修改后画质下降严重，删除任务效果不好。新的 checkpoint 已发布在 Hugging Face，对应 revisions 为 [hotfix-1k-20260708](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k-20260708) 和 [hotfix-1k5-20260708](https://huggingface.co/Boogu/Boogu-Image-0.1-Edit-Turbo/tree/hotfix-1k5-20260708)。我们推荐下载 1K checkpoint，以获得更稳定的效果。欢迎体验 [1K 分辨率在线 Demo](https://demo-edit-turbo-1k.boogu.org/) 和 [1.5K 分辨率在线 Demo](https://demo-edit-turbo-1k5.boogu.org/)。
@@ -240,6 +241,15 @@ python inference.py \
   --output_image_path "outputs/test_base/out_1.png" \
   --device "$device"
 ```
+
+### Ascend NPU 推理支持
+
+如需在 Ascend NPU 上进行推理，请切换至 `npu` 分支：
+
+```bash
+git checkout npu
+```
+具体的安装和使用说明请参考该分支下的 `README.md` 文件。
 
 ### 硬件说明
 
